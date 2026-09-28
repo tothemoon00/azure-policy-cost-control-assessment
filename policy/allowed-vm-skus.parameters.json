@@ -1,0 +1,22 @@
+{
+  "allowedVmSkus": {
+    "type": "Array",
+    "metadata": {
+      "displayName": "Approved virtual machine SKUs",
+      "description": "The VM SKUs permitted at the assignment scope."
+    }
+  },
+  "effect": {
+    "type": "String",
+    "metadata": {
+      "displayName": "Policy effect",
+      "description": "Start with Audit and use Deny only after validating impact."
+    },
+    "allowedValues": [
+      "Audit",
+      "Deny",
+      "Disabled"
+    ],
+    "defaultValue": "Audit"
+  }
+}

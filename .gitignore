@@ -1,0 +1,25 @@
+# Terraform
+.terraform/
+*.tfstate
+*.tfstate.*
+crash.log
+crash.*.log
+*.tfvars
+!terraform.tfvars.example
+backend.hcl
+
+# Local tooling
+.env
+.env.*
+!.env.example
+tmp/
+
+# OS and editor files
+.DS_Store
+Thumbs.db
+.vscode/
+
+
+# Local Terraform plan artifacts
+*.tfplan
+assessment-plan.json

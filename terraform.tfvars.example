@@ -1,0 +1,13 @@
+# Copy to terraform.tfvars and replace the subscription ID. Do not commit the copy.
+subscription_id     = "00000000-0000-0000-0000-000000000000"
+location            = "southeastasia"
+resource_group_name = "rg-azure-policy-assessment"
+
+# Begin safely in Audit mode. Change to Deny only after verifying the compliance result.
+policy_effect = "Audit"
+
+allowed_vm_skus = [
+  "Standard_B2s",
+  "Standard_B2ms",
+  "Standard_D2as_v5"
+]
